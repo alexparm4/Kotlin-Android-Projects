@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ColorPicker</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Color Picker</string>
+    <string name="saved_colors_file_name">savedColorFile.txt</string>
+    <string name="empty_string">""</string>
+    <string name="saved_colors_file_path">data/data/com.example.colorpicker/files/savedColorFile.txt</string>
+    <string name="export_button">Export</string>
+    <string name="key_red">red</string>
+    <string name="key_green">green</string>
+    <string name="key_blue">blue</string>
+    <string name="intent_colorstring_key">colorValue</string>
+    <string name="zero">0</string>
+    <string name="r">r</string>
+    <string name="e">e</string>
+    <string name="k">k</string>
+    <string name="i">i</string>
+    <string name="p">P</string>
+    <string name="o_letter">o</string>
+    <string name="c">c</string>
+    <string name="l">l</string>
+    <string name="upper_c">C</string>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ColorBlender</string>
+    <string name="action_settings">Settings</string>
+    <string name="import_button">Import</string>
+    <string name="request_code_error">Unrecognized Request Code</string>
+    <string name="intent_color_value_key">colorValue</string>
+    <string name="color_action">colorsuite.ACTION_COLOR</string>
+    <string name="percent_initial_text">50%</string>
+    <string name="bigC">C</string>
+    <string name="lower_l">l</string>
+    <string name="lower_o">o</string>
+    <string name="lower_r">r</string>
+    <string name="lower_e">e</string>
+    <string name="big_M">M</string>
+    <string name="lower_i">i</string>
+    <string name="lower_x">x</string>
+</resources>

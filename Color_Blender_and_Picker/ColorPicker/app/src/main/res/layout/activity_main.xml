@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ColorPickerMain" android:background="#443F3F">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="85dp"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay" android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@android:color/darker_gray"
+                app:popupTheme="@style/AppTheme.PopupOverlay" tools:layout_conversion_absoluteHeight="0dp"
+                tools:layout_editor_absoluteY="114dp" tools:layout_editor_absoluteX="0dp"
+                tools:layout_conversion_absoluteWidth="16dp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="52dp" android:id="@+id/r1" android:textColor="@color/violet"
+                        android:layout_alignParentStart="true" android:layout_marginStart="190dp"
+                        android:fontFamily="casual" android:textStyle="bold" android:textSize="42sp"
+                        android:layout_alignParentBottom="true" android:layout_marginBottom="1dp"
+                        android:translationY="-2dp"/>
+                <TextView
+                        android:text="@string/e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="53dp" android:id="@+id/e1" android:textColor="@color/blue"
+                        android:layout_alignParentStart="true" android:layout_marginStart="166dp"
+                        android:fontFamily="casual" android:textStyle="bold" android:textSize="42sp"
+                        android:translationY="-2dp" android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="3dp"/>
+                <TextView
+                        android:text="@string/k"
+                        android:layout_width="wrap_content"
+                        android:layout_height="47dp" android:id="@+id/k1" android:textColor="@color/green"
+                        android:layout_alignParentStart="true" android:layout_marginStart="143dp"
+                        android:fontFamily="casual" android:textStyle="bold" android:textSize="42sp"
+                        android:layout_alignParentBottom="true" android:layout_marginBottom="1dp"
+                        android:translationY="-2dp"/>
+                <TextView
+                        android:text="@string/i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="49dp" android:id="@+id/i1" android:textColor="@color/orange"
+                        android:layout_alignParentStart="true" android:layout_marginStart="110dp"
+                        android:fontFamily="casual" android:textStyle="bold" android:textSize="42sp"
+                        android:layout_alignParentBottom="true" android:layout_marginBottom="1dp"
+                        android:translationY="-2dp"/>
+                <TextView
+                        android:text="@string/c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="49dp" android:id="@+id/c2" android:textColor="@color/yellow"
+                        android:layout_alignParentStart="true" android:layout_marginStart="123dp"
+                        android:fontFamily="casual" android:textStyle="bold" android:textSize="42sp"
+                        android:layout_alignParentBottom="true" android:layout_marginBottom="2dp"
+                        android:translationY="-2dp"/>
+                <TextView
+                        android:text="@string/l"
+                        android:layout_width="13dp"
+                        android:layout_height="wrap_content" android:id="@+id/l1" android:textColor="@color/yellow"
+                        android:layout_alignParentStart="true" android:layout_marginStart="130dp"
+                        android:fontFamily="casual" android:textStyle="bold" android:textSize="42sp"
+                        android:translationY="-10dp"/>
+                <TextView
+                        android:text="@string/upper_c"
+                        android:layout_width="40dp"
+                        android:layout_height="49dp" android:id="@+id/c1" android:textColor="@color/red"
+                        android:layout_marginEnd="274dp"
+                        android:layout_marginStart="81dp"
+                        android:fontFamily="casual" android:textStyle="bold" android:textSize="42sp"
+                        android:textAlignment="gravity" android:gravity="top" android:layout_alignParentEnd="false"
+                        android:layout_alignParentStart="false" android:translationY="-8dp"/>
+                <TextView
+                        android:text="@string/p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="53dp" android:id="@+id/p1" android:textColor="@color/red"
+                        android:layout_alignParentStart="true" android:layout_marginStart="84dp"
+                        android:fontFamily="casual" android:textStyle="bold" android:textSize="42sp"
+                        android:layout_alignParentBottom="true" android:layout_marginBottom="3dp"
+                />
+                <TextView
+                        android:text="@string/o_letter"
+                        android:layout_width="36dp"
+                        android:layout_height="58dp" android:id="@+id/o1" android:textColor="@color/orange"
+                        android:layout_alignParentStart="true" android:layout_marginStart="108dp"
+                        android:fontFamily="casual" android:textStyle="bold" android:textSize="42sp"
+                        android:translationY="-10dp"/>
+                <TextView
+                        android:text="@string/o_letter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="54dp" android:id="@+id/o" android:textColor="@color/green"
+                        android:layout_alignParentEnd="true" android:layout_marginEnd="230dp"
+                        android:layout_marginStart="143dp"
+                        android:fontFamily="casual" android:textStyle="bold" android:textSize="42sp"
+                        android:translationY="-10dp"/>
+                <TextView
+                        android:text="@string/r"
+                        android:layout_width="34dp"
+                        android:layout_height="52dp" android:id="@+id/r2" android:textColor="@color/blue"
+                        android:layout_alignParentEnd="true" android:layout_marginEnd="196dp"
+                        android:layout_alignParentStart="true" android:layout_marginStart="164dp"
+                        android:fontFamily="casual" android:textStyle="bold" android:textSize="42sp"
+                        android:translationY="-10dp"/>
+
+                <ImageView
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/treepaintsplat" android:layout_marginLeft="0dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginEnd="62dp"
+                        android:id="@+id/treeIcon"/>
+
+                <ImageView
+                        android:id="@+id/saveButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@android:drawable/ic_menu_save"
+
+                        android:layout_marginBottom="53dp"
+                        android:layout_alignParentEnd="true" android:layout_marginEnd="6dp"
+                        android:layout_alignParentStart="true" android:layout_marginStart="357dp"
+                        android:translationY="-40dp"
+                        android:background="@color/blue" android:layout_alignParentBottom="true"
+                        />
+                <Spinner
+                        android:layout_width="167dp"
+                        android:layout_height="29dp" android:id="@+id/spinner"
+                        android:layout_alignParentEnd="true" android:layout_marginEnd="12dp"
+                        android:layout_alignParentBottom="false" android:layout_marginBottom="53dp"
+                        android:layout_alignParentStart="true" android:layout_marginStart="216dp"
+                        android:layout_marginTop="56dp"/>
+
+                <EditText
+                        android:layout_width="134dp"
+                        android:layout_height="51dp"
+                        android:inputType="textPersonName"
+                        android:text="@string/empty_string"
+                        android:ems="10"
+                        android:id="@+id/custom_colors" android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="45dp"
+                        android:layout_marginBottom="29dp" android:layout_alignParentStart="true"
+                        android:layout_marginStart="217dp" android:textColor="@android:color/black"
+                        android:layout_alignParentTop="true" android:layout_marginTop="0dp"
+                        android:layout_alignBottom="@+id/spinner" android:autofillHints=""/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main"
+
+             android:id="@+id/include"
+             android:layout_height="643dp"
+             android:layout_width="match_parent" android:layout_gravity="bottom"/>
+
+</android.support.design.widget.CoordinatorLayout>
