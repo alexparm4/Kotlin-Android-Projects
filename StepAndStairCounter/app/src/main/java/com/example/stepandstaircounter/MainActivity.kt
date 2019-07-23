@@ -17,7 +17,7 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
 import java.lang.Math.abs
-
+//Created by Alex Parmentier for Mobile Development Class 3/20/19
 //TODO: ? -> determine flights by changing values? ie once flat to stairs. probably too much too implement.
 
 class MainActivity : AppCompatActivity(), SensorEventListener {
