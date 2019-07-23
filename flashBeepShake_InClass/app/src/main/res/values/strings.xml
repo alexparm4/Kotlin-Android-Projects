@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">flashBeepShake_InClass</string>
+    <string name="msg_error">Error finding flashlight on device</string>
+</resources>
