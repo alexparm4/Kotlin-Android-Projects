@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:screenOrientation="portrait">
+    <TextView
+            android:text="@string/z_label"
+            android:layout_width="180dp"
+            android:layout_height="30dp" android:id="@+id/stairs_raw_z_tv"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/stairs_raw_y_tv" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="@string/y_label"
+            android:layout_width="180dp"
+            android:layout_height="30dp" android:id="@+id/stairs_raw_y_tv"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/stairs_raw_x_tv" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+    <TextView
+            android:text="@string/raw_title"
+            android:layout_width="76dp"
+            android:layout_height="31dp" android:id="@+id/stairs_raw_title_tv"
+            android:textSize="24sp" android:textStyle="bold|italic"
+            android:textAllCaps="false"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/flight_counter_tv"/>
+    <TextView
+            android:text="Raw"
+            android:layout_width="76dp"
+            android:layout_height="31dp" android:id="@+id/flat_raw_title_tv"
+            android:textSize="24sp" android:textStyle="bold|italic"
+            android:textAllCaps="false"
+            android:layout_marginStart="48dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="52dp" app:layout_constraintTop_toBottomOf="@+id/flat_step_tv"/>
+    <TextView
+            android:text="Stairs"
+            android:layout_width="89dp"
+            android:layout_height="36dp" android:id="@+id/stairs_tv"
+            android:textSize="26sp" android:textStyle="bold|italic"
+            android:textAllCaps="true" android:layout_marginTop="64dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="40dp" app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@android:color/holo_red_light"/>
+    <TextView
+            android:text="@string/flat_title"
+            android:layout_width="85dp"
+            android:layout_height="38dp" android:id="@+id/flat_tv"
+            android:textSize="26sp" android:textStyle="bold|italic"
+            android:textAllCaps="true" android:layout_marginTop="64dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/holo_green_dark"/>
+    <TextView
+            android:text="@string/x_label"
+            android:layout_width="180dp"
+            android:layout_height="30dp" android:id="@+id/flat_raw_x_tv"
+            android:textSize="24sp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/flat_raw_title_tv"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="@string/x_label"
+            android:layout_width="180dp"
+            android:layout_height="30dp" android:id="@+id/stairs_raw_x_tv"
+            android:textSize="24sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/stairs_raw_title_tv" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="@string/initial_timer"
+            android:layout_width="165dp"
+            android:layout_height="41dp" android:id="@+id/timestamp_tv"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="26sp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.486"
+            android:textColor="@android:color/background_dark"/>
+    <TextView
+            android:text="@string/y_label"
+            android:layout_width="180dp"
+            android:layout_height="30dp" android:id="@+id/flat_raw_y_tv"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/flat_raw_x_tv" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="@string/z_label"
+            android:layout_width="180dp"
+            android:layout_height="30dp" android:id="@+id/flat_raw_z_tv"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/flat_raw_y_tv"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"/>
+    <Button
+            android:text="Start Flat"
+            android:layout_width="104dp"
+            android:layout_height="45dp" android:id="@+id/flat_start_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:visibility="invisible" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/flat_raw_z_tv"/>
+    <Button
+            android:text="@string/start_trip_btn"
+            android:layout_width="105dp"
+            android:layout_height="47dp" android:id="@+id/endStartTrip_btn"
+            app:layout_constraintStart_toEndOf="@+id/flat_start_btn" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/stairs_start_btn" android:layout_marginEnd="8dp"
+            android:layout_marginTop="36dp" app:layout_constraintTop_toBottomOf="@+id/stairs_raw_z_tv"
+            app:layout_constraintHorizontal_bias="0.641"/>
+    <Button
+            android:text="Report"
+            android:layout_width="99dp"
+            android:layout_height="40dp" android:id="@+id/report_btn"
+            android:visibility="invisible"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/stairs_step_tv"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="76dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.982" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.855"/>
+    <Button
+            android:text="Start Stairs"
+            android:layout_width="103dp"
+            android:layout_height="48dp" android:id="@+id/stairs_start_btn"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="28dp"
+            android:visibility="invisible" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/stairs_raw_z_tv"/>
+    <TextView
+            android:text="@string/init_steps"
+            android:layout_width="93dp"
+            android:layout_height="44dp" android:id="@+id/flat_step_tv"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/flat_tv" android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+            android:text="@string/init_stairs"
+            android:layout_width="93dp"
+            android:layout_height="44dp" android:id="@+id/stairs_step_tv"
+            android:textSize="22sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/stairs_tv" android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@+id/flat_step_tv"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="1.0"/>
+    <TextView
+            android:text="@string/init_flights"
+            android:layout_width="87dp"
+            android:layout_height="43dp" android:id="@+id/flight_counter_tv"
+            android:textSize="22sp"
+            app:layout_constraintTop_toBottomOf="@+id/stairs_step_tv"
+            app:layout_constraintStart_toEndOf="@+id/flat_step_tv" android:layout_marginStart="164dp"/>
+    <Button
+            android:text="Slow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/slow_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="56dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="invisible" android:background="#C0C0C0" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.869"/>
+    <Button
+            android:text="Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/med_btn"
+            android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="invisible"
+            android:background="#0cc0d1"
+            app:layout_constraintStart_toEndOf="@+id/slow_btn" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/fast_btn"
+            app:layout_constraintHorizontal_bias="0.473" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.869"/>
+    <Button
+            android:text="Fast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/fast_btn"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="64dp"
+            android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="invisible" android:background="#C0C0C0"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.869"/>
+    <TextView
+            android:text="Set Walk Speed"
+            android:layout_width="164dp"
+            android:layout_height="32dp" android:id="@+id/walkspeed_title_tv"
+            android:textStyle="bold|italic" android:textAlignment="center"
+            android:textSize="24sp"
+            android:visibility="invisible"
+            android:layout_marginBottom="152dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@+id/flat_start_btn"
+            android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/stairs_start_btn"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/endStartTrip_btn"
+            app:layout_constraintHorizontal_bias="0.2" app:layout_constraintVertical_bias="0.254"/>
+    <TextView
+            android:text="0.55 sec / step"
+            android:layout_width="130dp"
+            android:layout_height="27dp" android:id="@+id/walkspeed_display_tv"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/report_btn"
+            android:layout_marginEnd="140dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/walkspeed_title_tv"
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintVertical_bias="0.0"/>
+</android.support.constraint.ConstraintLayout>

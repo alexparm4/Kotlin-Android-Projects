@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Step and Stair Counter</string>
+    <string name="x_label">X:\t</string>
+    <string name="y_label">Y:\t</string>
+    <string name="z_label">Z:\t</string>
+    <string name="flat_title">Flat</string>
+    <string name="stairs_title">Stairs</string>
+    <string name="min_title">Min.</string>
+    <string name="max_title">Max.</string>
+    <string name="average_title">Average</string>
+    <string name="raw_title">Raw</string>
+    <string name="start_trip_btn">Start Trip</string>
+    <string name="end_trip_btn">End Trip</string>
+    <string name="initial_timer">0.0 seconds</string>
+    <string name="init_steps">0 steps</string>
+    <string name="init_stairs">0 stairs</string>
+    <string name="init_flights">0 flights</string>
+
+</resources>
